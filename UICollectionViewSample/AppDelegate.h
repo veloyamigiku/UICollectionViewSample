@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  UICollectionViewSample
 //
-//  Created by れおん on 2015/02/14.
+//  Created on 2015/02/14.
 //
 //
 
