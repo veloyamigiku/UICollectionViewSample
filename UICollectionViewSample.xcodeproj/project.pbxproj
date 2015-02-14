@@ -14,6 +14,7 @@
 		359F19E91A8EFFFA003ED8C6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 359F19E71A8EFFFA003ED8C6 /* LaunchScreen.xib */; };
 		359F19F51A8EFFFA003ED8C6 /* UICollectionViewSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F19F41A8EFFFA003ED8C6 /* UICollectionViewSampleTests.m */; };
 		359F1A011A8F0368003ED8C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F1A001A8F0368003ED8C6 /* ViewController.m */; };
+		359F1A061A8F0497003ED8C6 /* NumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F1A051A8F0497003ED8C6 /* NumberCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		359F19F41A8EFFFA003ED8C6 /* UICollectionViewSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewSampleTests.m; sourceTree = "<group>"; };
 		359F19FF1A8F0368003ED8C6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		359F1A001A8F0368003ED8C6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		359F1A041A8F0497003ED8C6 /* NumberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberCell.h; sourceTree = "<group>"; };
+		359F1A051A8F0497003ED8C6 /* NumberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		359F19D71A8EFFFA003ED8C6 /* UICollectionViewSample */ = {
 			isa = PBXGroup;
 			children = (
+				359F1A031A8F043F003ED8C6 /* CollectionViewCell */,
 				359F19FE1A8F0254003ED8C6 /* ViewController */,
 				359F19DC1A8EFFFA003ED8C6 /* AppDelegate.h */,
 				359F19DD1A8EFFFA003ED8C6 /* AppDelegate.m */,
@@ -125,6 +129,15 @@
 				359F1A001A8F0368003ED8C6 /* ViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		359F1A031A8F043F003ED8C6 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				359F1A041A8F0497003ED8C6 /* NumberCell.h */,
+				359F1A051A8F0497003ED8C6 /* NumberCell.m */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359F1A061A8F0497003ED8C6 /* NumberCell.m in Sources */,
 				359F1A011A8F0368003ED8C6 /* ViewController.m in Sources */,
 				359F19DE1A8EFFFA003ED8C6 /* AppDelegate.m in Sources */,
 				359F19DB1A8EFFFA003ED8C6 /* main.m in Sources */,
