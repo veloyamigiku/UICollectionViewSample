@@ -18,6 +18,7 @@
 
 /**
  *  コンストラクタです。
+ *  （オーバーライド）
  */
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -30,6 +31,7 @@
 
 /**
  *  コンストラクタです。
+ *  （オーバーライド）
  */
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
@@ -54,11 +56,23 @@
     [self.contentView addSubview:label];
 }
 
+/**
+ *  セルのフォントを取得します。
+ *
+ *  @return セルのフォント。
+ */
 + (UIFont *)font
 {
     return [UIFont boldSystemFontOfSize:24];
 }
 
+/**
+ *  指定のセルのサイズ（縦、横）を取得します。
+ *
+ *  @param number サイズを取得するセルの番号。
+ *
+ *  @return 指定のセルのサイズ。
+ */
 + (CGSize)cellSizeWithNumber:(NSNumber *)number
 {
     static CGFloat margin = 5.f;
@@ -67,12 +81,22 @@
                       numberSize.height + margin * 2);
 }
 
+/**
+ *  セル配置時？の処理です。
+ *  （オーバーライド）
+ */
 - (void)layoutSubviews
 {
     [super layoutSubviews];
     self.label.frame = self.contentView.bounds;
 }
 
+/**
+ *  セルの番号振り時の処理です。
+ *  （オーバーライド）
+ *
+ *  @param number <#number description#>
+ */
 - (void)setNumber:(NSNumber *)number {
     if (_number != number) {
         _number = number;
